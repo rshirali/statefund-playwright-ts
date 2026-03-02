@@ -1,0 +1,27 @@
+{
+  "name": "statefund-playwright-ts",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "install:pw": "npx playwright install",
+    "test": "playwright test",
+    "test:api": "playwright test --grep @api",
+    "test:ui": "playwright test tests/ui",
+    "test:headed": "playwright test tests/ui --headed",
+    "debug": "PWDEBUG=1 playwright test tests/ui",
+    "show-report": "playwright show-report",
+    "pw:print": "PRINT_CONFIG_ONLY=1 npx playwright test --config=playwright.print.ts --reporter=line",
+    "test:headed:chrome": "playwright test tests/ui --headed --project=chromium",
+    "test:headed:firefox": "playwright test tests/ui --headed --project=firefox",
+    "test:headed:webkit": "playwright test tests/ui --headed --project=webkit",
+    "bdd": "cucumber-js"
+  },
+  "devDependencies": {
+    "@cucumber/cucumber": "^10.9.0",
+    "@playwright/test": "1.58.2",
+    "@types/node": "^24.9.2",
+    "ts-node": "^10.9.2",
+    "tsx": "^4.20.6",
+    "typescript": "^5.6.3"
+  }
+}
