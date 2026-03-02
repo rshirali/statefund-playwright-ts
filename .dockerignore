@@ -1,0 +1,13 @@
+# Node modules and build outputs
+node_modules
+playwright-report
+test-results
+allure-results
+allure-report
+
+# System files
+.DS_Store
+.env
+.git
+.gitignore
+npm-debug.log*
